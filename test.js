@@ -13,6 +13,10 @@ var _spec = require("./spec");
 
 var _spec2 = _interopRequireDefault(_spec);
 
+var _ = require("./");
+
+var _2 = _interopRequireDefault(_);
+
 describe("Spec Runner", function () {
   it("should return proper title", function () {
     var specEx = new _spec2["default"]("A title", "02_node_modules", []);
@@ -26,5 +30,14 @@ describe("Spec Runner", function () {
     var scripts = ["echo Hi there"];
     var specEx = new _spec2["default"]("A title", "02_node_modules", scripts);
     chai.expect(specEx.run.bind(specEx)).to.not["throw"]();
+  });
+});
+
+describe("Mine class", function () {
+  it("should contain list of specs", function () {
+    var spec = new _spec2["default"]("New spec runner", "02_node_modules", ["exit 0"]);
+    var m = new _2["default"]();
+    m.addSpec(spec);
+    chai.expect(m.specs).to.have.length(1);
   });
 });

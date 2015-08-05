@@ -3,6 +3,7 @@
 
 import * as chai from "chai";
 import Spec from "./spec";
+import Mine from "./";
 
 describe("Spec Runner", () => {
   it("should return proper title", () => {
@@ -21,4 +22,13 @@ describe("Spec Runner", () => {
     chai.expect(specEx.run.bind(specEx))
       .to.not.throw();
   });
+});
+
+describe("Mine class", () =>{
+    it("should contain list of specs", ()=>{
+        let spec = new Spec("New spec runner", "02_node_modules", ["exit 0"]);
+        let m = new Mine();
+        m.addSpec(spec);
+        chai.expect(m.specs).to.have.length(1);
+    });
 });

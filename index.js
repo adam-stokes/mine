@@ -21,12 +21,19 @@ var Mine = (function () {
     _createClass(Mine, [{
         key: "run",
         value: function run() {
-            console.log("Processing: %s", this.specs);
+            this.specs.forEach(function (s) {
+                s.run();
+            });
         }
     }, {
         key: "isDone",
         value: function isDone(spec) {
             console.log("Checking: " + spec);
+        }
+    }, {
+        key: "addSpec",
+        value: function addSpec(spec) {
+            this.specs.push(spec);
         }
     }]);
 

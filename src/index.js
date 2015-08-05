@@ -8,9 +8,14 @@ export default class Mine {
         this.completed = [];
     }
     run() {
-        console.log("Processing: %s", this.specs);
+        this.specs.forEach(s => {
+            s.run();
+        });
     }
     isDone(spec){
         console.log(`Checking: ${spec}`);
+    }
+    addSpec(spec){
+        this.specs.push(spec);
     }
 }
