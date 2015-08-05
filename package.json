@@ -26,12 +26,14 @@
     ""
   ],
   "dependencies": {
-    "meow": "^3.3.0",
+    "bluebird": "^2.9.34",
+    "native-or-bluebird": "^1.2.0",
     "shelljs": "^0.5.1"
   },
   "devDependencies": {
     "babel": "^5.8.20",
     "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
     "mocha": "*",
     "should": "^7.0.2"
   }

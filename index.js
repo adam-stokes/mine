@@ -19,13 +19,6 @@ var Mine = (function () {
     }
 
     _createClass(Mine, [{
-        key: "run",
-        value: function run() {
-            this.specs.forEach(function (s) {
-                s.run();
-            });
-        }
-    }, {
         key: "isDone",
         value: function isDone(spec) {
             console.log("Checking: " + spec);
