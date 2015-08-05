@@ -1,10 +1,25 @@
-'use strict';
-module.exports = function (str, opts) {
-	if (typeof str !== 'string') {
-		throw new TypeError('Expected a string');
-	}
+"use strict";
 
-	opts = opts || {};
+var Promise = require("bluebird");
+var _ = require("lodash");
 
-	return str + ' & ' + (opts.postfix || 'rainbows');
-};
+function Mine() {
+  var specs = [];
+  var completed = [];
+}
+
+/*
+ * Run specs
+ */
+Mine.prototype.run = Promise.method(function() {
+  return _.each(this.spec, function(item) {
+    console.log("Running: ", item);
+  });
+});
+
+/*
+ * Check completed
+ */
+Mine.prototype.isDone = Promise.method(function(spec) {
+  return _.find(this.completed, spec);
+});

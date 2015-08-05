@@ -1,0 +1,3 @@
+[tuning]
+# How many applicable parallel runs can happen
+concurrency = 4
