@@ -26,9 +26,12 @@
     ""
   ],
   "dependencies": {
-    "meow": "^3.3.0"
+    "meow": "^3.3.0",
+    "shelljs": "^0.5.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "chai": "^3.2.0",
+    "mocha": "*",
+    "should": "^7.0.2"
   }
 }

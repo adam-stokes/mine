@@ -4,6 +4,9 @@
         "node": true
     },
     "ecmaFeatures": {
-        "generators": true
+        "modules": true
+    },
+    "rules": {
+        "no-underscore-dangle": 0
     }
 }
