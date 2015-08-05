@@ -9,10 +9,6 @@
     "email": "adam.stokes@ubuntu.com",
     "url": "battlemidget/mine"
   },
-  "bin": "cli.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "scripts": {
     "test": "mocha"
   },
@@ -21,9 +17,7 @@
     "cli.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    ""
+    "admin"
   ],
   "dependencies": {
     "bluebird": "^2.9.34",
