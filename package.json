@@ -1,0 +1,34 @@
+{
+  "name": "mine",
+  "version": "0.0.0",
+  "description": "My solid module",
+  "license": "MIT",
+  "repository": "battlemidget/mine",
+  "author": {
+    "name": "Adam Stokes",
+    "email": "adam.stokes@ubuntu.com",
+    "url": "battlemidget/mine"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
