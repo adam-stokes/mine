@@ -30,6 +30,7 @@
     "shelljs": "^0.5.1"
   },
   "devDependencies": {
+    "babel": "^5.8.20",
     "chai": "^3.2.0",
     "mocha": "*",
     "should": "^7.0.2"
